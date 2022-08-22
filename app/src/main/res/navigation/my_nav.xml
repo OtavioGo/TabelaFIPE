@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/marcaFragment">
+
+    <fragment
+        android:id="@+id/marcaFragment"
+        android:name="com.example.tabelafipe.fragment.marca.MarcaFragment"
+        android:label="Marcas"
+        tools:layout="@layout/fragment_marca" >
+        <action
+            android:id="@+id/action_marcaFragment_to_modeloFragment"
+            app:destination="@id/modeloFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/modeloFragment"
+        android:name="com.example.tabelafipe.fragment.modelo.ModeloFragment"
+        android:label="Modelos"
+        tools:layout="@layout/fragment_modelo" >
+        <action
+            android:id="@+id/action_modeloFragment_to_marcaFragment"
+            app:destination="@id/marcaFragment" />
+        <argument
+            android:name="currentUser"
+            app:argType="com.example.tabelafipe.model.marca.ArrayMarcas" />
+    </fragment>
+</navigation>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TabelaFIPE</string>
+    <string name="txt_icon_info">Icon de info</string>
+    <string name="txt_marca">Marca</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_modelo">Modelo</string>
+    <string name="txt_id">ID</string>
+</resources>
